@@ -9,7 +9,7 @@ The basic idea is to make a hangman game. The user has 8 guesses to guess the co
 The project is subdivided into three parts. For me, since I will be chronicling my progress and problems encountered at each step, and putting this all on GitHub, it will be four parts,
 with the first part being creating and adding files from my local repository to my GitHub account.
 
-**********************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************************************************************
 Part One: Adding from local repository to GitHub
 
 Things to Do
@@ -29,4 +29,4 @@ Solution
 -Use git bash and touch .gitignore to create the .gitignore file
 -Helpful link for which files I should add to a .gitignore file for an Eclipse Project(https://www.jamescoyle.net/how-to/supporting-scripts/3027-gitignore-file-for-eclipse-projects)
 
-**********************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************************************************************
