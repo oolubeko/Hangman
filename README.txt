@@ -17,7 +17,7 @@ Things to Do
 -Initialize a local git repository
 -Create a gitignore file
 -Add relevant files to git repository
--Push the repo to the global repoisitory
+-Push the repo to the global repository
 
 
 Problems Encountered
@@ -30,3 +30,24 @@ Solution
 -Helpful link for which files I should add to a .gitignore file for an Eclipse Project(https://www.jamescoyle.net/how-to/supporting-scripts/3027-gitignore-file-for-eclipse-projects)
 
 ********************************************************************************************************************************************************************************************************************************************************************************************
+Part Two: Playing a console based game
+
+Things to Do
+-Implement a hangman game that is playable on the console
+-Choose a random word to use as the secret word. That word is chosen from a word list, located in HangmanLexicon.java
+-Keep track of the user’s partially guessed word, which begins as a series of dashes and then gets
+ updated as correct letters are guessed.
+-Implement the basic control structure and manage the details (ask the user to guess a letter, keep
+ track of the number of guesses remaining, print out the various messages, detect the end of the game,
+ and so forth).
+
+More In-Depth Specifications
+-At the beginning of your run method, need to create a new HangmanLexicon and store it in an
+ instance variable. If you extend the program to allow the user to play multiple games, the creation
+ of the HangmanLexicon should be performed outside the loop that plays the game repeatedly so that
+ this operation is performed once rather than for every game.
+-Should accept the user’s guesses in either lower or upper case, even though all letters in the
+ secret words are written in upper case. 
+-If the user guesses something other than a single letter, program should tell the user that the
+ guess is illegal and accept a new guess.
+
