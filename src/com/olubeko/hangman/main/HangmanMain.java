@@ -83,6 +83,7 @@ public class HangmanMain {
 			
 			int numGuesses = 8;		//set number of guesses to 8
 			boolean solved = false;		//set solved game state to false
+			boolean[] guessedLetters = new boolean[26];	//array to keep track of all leters guessed. 
 			
 			while(numGuesses > 0 && !solved) {
 				System.out.println("You have " + numGuesses + " left");
@@ -94,18 +95,24 @@ public class HangmanMain {
 					userGuess = sc.next();
 				}
 				char g = userGuess.charAt(0); //.next() method returns a String, so convert it to a char first
+				Character.toLowerCase(g);
 				
 				boolean isLetter = checkLetter(wordToGuess, g); //check if the users guess is correct
 				
 				if(isLetter) {
+					if(guessedLetters[g - 97]) {
+						continue;
+					}
 					finalWord = addLetter(wordToGuess, finalWord, g);
 					System.out.println("Right answer! Your word is now " + finalWord);
 					solved = checkSolved(finalWord);	
 				}
 				else {
 					System.out.println("Wrong answer! Your word is now " + finalWord);
+					numGuesses--;
 				}
-				numGuesses--;
+				guessedLetters[g - 97] = true;	//a is 97 in ascii table, so offset all chars by 97
+				
 			}
 			
 			if(solved){

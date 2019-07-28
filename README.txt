@@ -50,4 +50,9 @@ More In-Depth Specifications
  secret words are written in upper case. 
 -If the user guesses something other than a single letter, program should tell the user that the
  guess is illegal and accept a new guess.
+-If the user guesses a correct letter more than once, program should simply do nothing.
+ Guessing an incorrect letter a second time should be counted as another wrong guess. (In each case,
+ these interpretations are the easiest way to handle the situation, and program will probably do
+ the right thing.)
+ 
 
